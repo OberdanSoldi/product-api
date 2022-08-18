@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  product-database:
+    image: postgres:latest
+
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: product-db
+    container_name: product-database
+
+    ports:
+      - "5432:5432"
